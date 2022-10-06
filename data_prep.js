@@ -21,7 +21,7 @@ module.exports.prep = function(){
 //cpa()
 module.exports.cpa = function() {
     return new Promise((resolve, reject) => {
-        let cpa = []
+        let cpa = [];
         for(let i = 0; i < students.length; i++){
             const stu = students[i];
             if (stu.program === 'CPA'){
