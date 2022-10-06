@@ -27,14 +27,15 @@ module.exports.cpa = function() {
             if (stu.program === 'CPA'){
                 cpa.push(stu)
         }}
-        if (students.length === 0){
+        if (cpa.length === 0){
             reject('no results returned');
         } 
         else{
             resolve(cpa);
         }
     });
-}
+};
+
 
 
 //highGPA()
@@ -52,4 +53,5 @@ module.exports.highGPA = function() {
             }
         }
     });
-}
+};
+
