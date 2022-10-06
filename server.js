@@ -25,7 +25,7 @@ app.use((req, res)=>{
 });
 
 //cpa
-app.get("./", function(req,res){
+app.get("/CPA", function(req,res){
     data_prep.cpa()
     .then((data) =>{
         res.json(data);
@@ -36,7 +36,7 @@ app.get("./", function(req,res){
 
 
 //highGPA
-app.get("./data_prep.js", function(req,res){
+app.get("/highGPA", function(req,res){
     data_prep.highGPA()
     .then((data) =>{
         res.json(data);
