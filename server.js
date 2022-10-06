@@ -25,7 +25,7 @@ app.use((req, res)=>{
 });
 
 //cpa
-app.get("/CPA", function(req,res){
+app.get('/cpa', function(req,res){
     data_prep.cpa()
     .then((data) =>{
         res.json(data);
@@ -33,6 +33,8 @@ app.get("/CPA", function(req,res){
         res.json({ error: err });
     })
 });
+
+
 
 
 //highGPA
